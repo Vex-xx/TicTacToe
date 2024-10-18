@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="headContainer">
+        <h1 class="head">Welcome to Tic-Tac-Toe</h1>  
+        <div class="navContainer">
+            <div class="menu">
+                <i class="bi bi-three-dots"></i>
+            </div>          
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <div class="mode" onclick="lightDark()">
+                    <i class="bi bi-moon-fill"></i>
+                    <i class="bi bi-brightness-high-fill lightIcon"></i>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="btnContainer">
+            <p>Player 1 (X)</p>
+            <input type="text" id="p1" placeholder="Name">
+            <p>Player 2 (O)</p>
+            <input type="text" id="p2" placeholder="Name">
+            <a href="play.html" onclick="getPName()">Start Game</a> 
+        </div>
+    </div>    
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
