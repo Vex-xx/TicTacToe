@@ -142,8 +142,8 @@
 
 .board{
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #player{
@@ -257,7 +257,7 @@
         color: white;
     }
 
-    .board td{
+    .board button{
         width: 100px;
         height: 100px;
     }
