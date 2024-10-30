@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+</head>
+<body onload="onload()">    
+    <div class="navContainer">    
+        <div class="menu">
+            <i class="bi bi-three-dots"></i>          
+        </div>
+        <nav class="navbar">                
+            <a href="index.html">Home</a>
+            <a href="#"  onclick="restart()">Restart</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <div class="mode">                   
+                <img src="Media/DarkMode.png" alt="1" id="icon" onclick="darkmode()">                   
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1 id="player"></h1>
+        <div class="board">
+                <button id="a1" onclick="insert(0,0,'a1')"></button>
+                <button id="a2" onclick="insert(0,1,'a2')"></button>
+                <button id="a3" onclick="insert(0,2,'a3')"></button>
+
+                <button id="b1" onclick="insert(1,0,'b1')"></button>
+                <button id="b2" onclick="insert(1,1,'b2')"></button>
+                <button id="b3" onclick="insert(1,2,'b3')"></button>
+
+                <button id="c1" onclick="insert(2,0,'c1')"></button>
+                <button id="c2" onclick="insert(2,1,'c2')"></button>
+                <button id="c3" onclick="insert(2,2,'c3')"></button>
+        </div>
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
