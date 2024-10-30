@@ -14,19 +14,19 @@ function darkmode() {
 
     if(element.classList.contains("darkmode")){
         sessionStorage.setItem("darkmode","active");
-        icon.src = "Media/LightMode.png";
+        icon.src = "LightMode.png";
     }  
     
     else{
         sessionStorage.setItem("darkmode",null);
-        icon.src = "Media/DarkMode.png";
+        icon.src = "DarkMode.png";
     }
 }
 
 function onload(){
     if(dark === "active"){
         element.classList.toggle("darkmode",true);
-        icon.src = "Media/LightMode.png";
+        icon.src = "LightMode.png";
     }
 }
 
